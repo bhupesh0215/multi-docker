@@ -25,14 +25,14 @@ jobs:
 
     - name: Tag Docker image
       run: |
-        docker tag multi-client:latest bhupesh0215/multi-client:latest
-        docker tag multi-nginx bhupesh0215/multi-nginx:latest
-        docker tag multi-server bhupesh0215/multi-server:latest
-        docker tag multi-worker bhupesh0215/multi-worker:latest
+        docker tag multi-client bhupesh0215/multi-client:v5
+        docker tag multi-nginx bhupesh0215/multi-nginx:v5
+        docker tag multi-server bhupesh0215/multi-server:v5
+        docker tag multi-worker bhupesh0215/multi-worker:v5
         
     - name: Push Docker image
       run: |
-        docker push bhupesh0215/multi-client:latest
-        docker push bhupesh0215/multi-nginx:latest
-        docker push bhupesh0215/multi-server:latest
-        docker push bhupesh0215/multi-worker:latest
+        docker push bhupesh0215/multi-client:v5
+        docker push bhupesh0215/multi-nginx:v5
+        docker push bhupesh0215/multi-server:v5
+        docker push bhupesh0215/multi-worker:v5
